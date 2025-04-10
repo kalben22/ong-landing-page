@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   keywords: ["association", "bénévolat", "impact social", "communauté"],
   authors: [{ name: "Association FLAKO" }],
   openGraph: {
-    title: "Association KLAKO",
+    title: "Association FLAKO",
     description: "Ensemble, créons un impact durable",
     url: "https://www.association.org",
     siteName: "Association FLAKO",
