@@ -1,4 +1,4 @@
-import { Heart, Users, Target, Sparkles } from "lucide-react"
+import { Heart, Users, Target, Sparkles, BarChart, Globe } from "lucide-react"
 import type { HistoireSection, TeamMember, Value, Action, ContactInfo } from "@/types"
 
 // Données de l'histoire de l'association
@@ -11,7 +11,7 @@ export const HISTOIRE_SECTIONS: HistoireSection[] = [
       "Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquam nisl.",
     ],
     image: "/images/histoire/debut.jpg",
-    imageAlt: "Les débuts de notre Association",
+    imageAlt: "Les débuts de notre ONG",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ export const HISTOIRE_SECTIONS: HistoireSection[] = [
       "Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquam nisl.",
     ],
     image: "/images/histoire/evolution.jpg",
-    imageAlt: "L'évolution de notre Association",
+    imageAlt: "L'évolution de notre ONG",
   },
   {
     id: 3,
@@ -30,11 +30,11 @@ export const HISTOIRE_SECTIONS: HistoireSection[] = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl.",
     ],
     image: "/images/histoire/aujourdhui.jpg",
-    imageAlt: "Notre Association aujourd'hui",
+    imageAlt: "Notre ONG aujourd'hui",
   },
 ]
 
-// Données des membres de l'équipe
+// Données des membres de l'équipe - Ajout de membres supplémentaires pour démontrer le carrousel
 export const TEAM_MEMBERS: TeamMember[] = [
   {
     id: 1,
@@ -55,6 +55,20 @@ export const TEAM_MEMBERS: TeamMember[] = [
     name: "Nom Prénom",
     role: "Fonction",
     image: "/images/team/member3.jpg",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia.",
+  },
+  {
+    id: 4,
+    name: "Nom Prénom",
+    role: "Fonction",
+    image: "/images/team/member1.jpg",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia.",
+  },
+  {
+    id: 5,
+    name: "Nom Prénom",
+    role: "Fonction",
+    image: "/images/team/member2.jpg",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia.",
   },
 ]
@@ -81,7 +95,7 @@ export const VALUES: Value[] = [
   },
 ]
 
-// Données des actions de l'association
+// Données des actions de l'association - Ajout d'actions supplémentaires pour démontrer la pagination
 export const ACTIONS: Action[] = [
   {
     id: 1,
@@ -94,15 +108,29 @@ export const ACTIONS: Action[] = [
     id: 2,
     title: "Action 2",
     description: "Description de l'action et de son impact sur la communauté et les bénéficiaires.",
-    icon: <Sparkles className="h-6 w-6 text-moonlight" />,
+    icon: <BarChart className="h-6 w-6 text-moonlight" />,
     link: "#en-savoir-plus-2",
   },
   {
     id: 3,
     title: "Action 3",
     description: "Description de l'action et de son impact sur la communauté et les bénéficiaires.",
-    icon: <Sparkles className="h-6 w-6 text-moonlight" />,
+    icon: <Globe className="h-6 w-6 text-moonlight" />,
     link: "#en-savoir-plus-3",
+  },
+  {
+    id: 4,
+    title: "Action 4",
+    description: "Description de l'action et de son impact sur la communauté et les bénéficiaires.",
+    icon: <Sparkles className="h-6 w-6 text-moonlight" />,
+    link: "#en-savoir-plus-4",
+  },
+  {
+    id: 5,
+    title: "Action 5",
+    description: "Description de l'action et de son impact sur la communauté et les bénéficiaires.",
+    icon: <BarChart className="h-6 w-6 text-moonlight" />,
+    link: "#en-savoir-plus-5",
   },
 ]
 
@@ -110,11 +138,11 @@ export const ACTIONS: Action[] = [
 export const CONTACT_INFO: ContactInfo = {
   phone: "+33 1 23 45 67 89",
   email: "contact@association.org",
-  address: "123 Rue de l'Association, 75000 Paris",
+  address: "123 Rue de l'ONG, 75000 Paris",
   socialLinks: [
-    { platform: "instagram", url: "https://instagram.com/Association" },
-    { platform: "facebook", url: "https://facebook.com/Association" },
-    { platform: "linkedin", url: "https://linkedin.com/company/Association" },
+    { platform: "instagram", url: "https://instagram.com/ong" },
+    { platform: "facebook", url: "https://facebook.com/ong" },
+    { platform: "linkedin", url: "https://linkedin.com/company/ong" },
   ],
 }
 

@@ -1,28 +1,29 @@
 "use client"
 
-import { memo } from "react"
+import { memo, useState } from "react"
 import { motion } from "framer-motion"
+import { ChevronLeft, ChevronRight } from "lucide-react"
 import { SectionContainer } from "@/components/ui/section-container"
 import { SectionHeading } from "@/components/ui/section-heading"
 import { TeamMemberCard } from "@/components/ui/team-member-card"
 import { TEAM_MEMBERS } from "@/lib/constants"
-
-const fadeInUp = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-}
-
-const staggerChildren = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.2,
-    },
-  },
-}
+import { cn } from "@/lib/utils"
 
 function EquipeComponent() {
+  const [currentPage, setCurrentPage] = useState(0)
+  const itemsPerPage = 3
+  const totalPages = Math.ceil(TEAM_MEMBERS.length / itemsPerPage)
+
+  const handlePrevious = () => {
+    setCurrentPage((prev) => Math.max(0, prev - 1))
+  }
+
+  const handleNext = () => {
+    setCurrentPage((prev) => Math.min(totalPages - 1, prev + 1))
+  }
+
+  const visibleMembers = TEAM_MEMBERS.slice(currentPage * itemsPerPage, (currentPage + 1) * itemsPerPage)
+
   return (
     <section id="equipe" className="w-full py-16 md:py-24">
       <SectionContainer>
@@ -42,23 +43,73 @@ function EquipeComponent() {
           />
         </motion.div>
 
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={staggerChildren}
-          className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3"
-        >
-          {TEAM_MEMBERS.map((member) => (
-            <TeamMemberCard
-              key={member.id}
-              name={member.name}
-              role={member.role}
-              image={member.image}
-              bio={member.bio}
-            />
-          ))}
-        </motion.div>
+        <div className="relative">
+          {/* Navigation buttons */}
+          {totalPages > 1 && (
+            <>
+              <button
+                onClick={handlePrevious}
+                disabled={currentPage === 0}
+                className={cn(
+                  "absolute left-0 top-1/2 -translate-y-1/2 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-peacock text-moonlight shadow-md transition-all",
+                  "focus:outline-none focus:ring-2 focus:ring-mustard focus:ring-offset-2",
+                  currentPage === 0 ? "opacity-50 cursor-not-allowed" : "hover:bg-peacock/90",
+                )}
+                aria-label="Membres précédents"
+              >
+                <ChevronLeft className="h-6 w-6" />
+              </button>
+              <button
+                onClick={handleNext}
+                disabled={currentPage === totalPages - 1}
+                className={cn(
+                  "absolute right-0 top-1/2 -translate-y-1/2 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-peacock text-moonlight shadow-md transition-all",
+                  "focus:outline-none focus:ring-2 focus:ring-mustard focus:ring-offset-2",
+                  currentPage === totalPages - 1 ? "opacity-50 cursor-not-allowed" : "hover:bg-peacock/90",
+                )}
+                aria-label="Membres suivants"
+              >
+                <ChevronRight className="h-6 w-6" />
+              </button>
+            </>
+          )}
+
+          {/* Team members grid */}
+          <motion.div
+            key={currentPage}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.3 }}
+            className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 px-6 md:px-10"
+          >
+            {visibleMembers.map((member) => (
+              <TeamMemberCard
+                key={member.id}
+                name={member.name}
+                role={member.role}
+                image={member.image}
+                bio={member.bio}
+              />
+            ))}
+          </motion.div>
+
+          {/* Pagination indicators */}
+          {totalPages > 1 && (
+            <div className="flex justify-center mt-8 space-x-2">
+              {Array.from({ length: totalPages }).map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentPage(index)}
+                  className={cn(
+                    "h-2 rounded-full transition-all",
+                    currentPage === index ? "w-6 bg-mustard" : "w-2 bg-peacock/30",
+                  )}
+                  aria-label={`Page ${index + 1}`}
+                />
+              ))}
+            </div>
+          )}
+        </div>
       </SectionContainer>
     </section>
   )
