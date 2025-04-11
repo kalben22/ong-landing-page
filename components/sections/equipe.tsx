@@ -46,7 +46,7 @@ function EquipeComponent() {
             badge="Les visages derrière notre mission"
             badgeColor="peacock"
             title="Notre Équipe"
-            description="[Votre contenu ici] Découvrez les personnes passionnées qui font avancer notre mission chaque jour."
+            description="Découvrez les personnes passionnées qui font avancer notre mission chaque jour."
             centered
           />
         </motion.div>
