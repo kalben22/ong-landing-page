@@ -16,9 +16,9 @@ export default function Footer() {
             height={32}
             className="h-8 w-8 rounded-full bg-mustard"
           />
-          <span className="text-lg font-bold">Association FLAKO</span>
+          <span className="text-lg font-bold">Association FLOKA</span>
         </div>
-        <p className="text-sm text-moonlight/80">© {new Date().getFullYear()} Association FLAKO. Tous droits réservés.</p>
+        <p className="text-sm text-moonlight/80">© {new Date().getFullYear()} Association FLOKA. Tous droits réservés.</p>
         <div className="flex items-center gap-4">
           <SocialIcon href="https://instagram.com/ong" icon={<Instagram className="h-4 w-4" />} label="Instagram" />
           <SocialIcon href="https://facebook.com/ong" icon={<Facebook className="h-4 w-4" />} label="Facebook" />

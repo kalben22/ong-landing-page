@@ -136,9 +136,9 @@ export const ACTIONS: Action[] = [
 
 // Données de contact
 export const CONTACT_INFO: ContactInfo = {
-  phone: "+299 01 76895423",
+  phone: "+299 01 xxxxxxxx",
   email: "contact@association.org",
-  address: "123 Rue de l'Association, Porto-Novo",
+  address: "FLOKA, Porto-Novo",
   socialLinks: [
     { platform: "instagram", url: "https://instagram.com/ong" },
     { platform: "facebook", url: "https://facebook.com/ong" },

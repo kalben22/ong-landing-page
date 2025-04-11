@@ -53,7 +53,7 @@ export default function Header() {
             transition={{ delay: 0.2, duration: 0.5 }}
             className="text-lg md:text-xl font-bold text-peacock"
           >
-            Association FLAKO
+            Association FLOKA
           </motion.span>
         </button>
 

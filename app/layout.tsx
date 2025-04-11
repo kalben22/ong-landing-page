@@ -6,15 +6,15 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Association FLAKO",
+  title: "Association FLOKA",
   description: "Site officiel de l'Association - Ensemble, créons un impact durable",
   keywords: ["association", "bénévolat", "impact social", "communauté"],
-  authors: [{ name: "Association FLAKO" }],
+  authors: [{ name: "Association FLOKA" }],
   openGraph: {
-    title: "Association FLAKO",
+    title: "Association FLOKA",
     description: "Ensemble, créons un impact durable",
     url: "https://www.association.org",
-    siteName: "Association FLAKO",
+    siteName: "Association FLOKA",
     locale: "fr_FR",
     type: "website",
   },
