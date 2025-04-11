@@ -24,10 +24,11 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
-  devIndicators: {
-    buildActivity: false,
-    buildActivityPosition: 'bottom-right',
-  },
+  
+  reactStrictMode: true,
+  // Désactiver complètement les outils de développement
+  devIndicators: false
+    
 }
 
 if (userConfig) {
