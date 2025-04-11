@@ -51,4 +51,11 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Ajouter à la fin du fichier globals.css */
+/* Masquer le panneau de développement Next.js */
+#__next-build-watcher {
+  display: none !important;
+}
+
 }
