@@ -1,6 +1,6 @@
 "use client"
 
-import { memo, useState } from "react"
+import { memo, useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { SectionContainer } from "@/components/ui/section-container"
@@ -10,9 +10,16 @@ import { ACTIONS } from "@/lib/constants"
 import { cn } from "@/lib/utils"
 
 function ActionsComponent() {
+  // Utiliser useState avec lazy initialization pour éviter les problèmes d'hydratation
   const [currentPage, setCurrentPage] = useState(0)
+  const [isMounted, setIsMounted] = useState(false)
   const itemsPerPage = 3
   const totalPages = Math.ceil(ACTIONS.length / itemsPerPage)
+
+  // S'assurer que le composant est monté côté client avant de rendre des éléments interactifs
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
 
   const handlePrevious = () => {
     setCurrentPage((prev) => Math.max(0, prev - 1))
@@ -22,6 +29,7 @@ function ActionsComponent() {
     setCurrentPage((prev) => Math.min(totalPages - 1, prev + 1))
   }
 
+  // Calculer les actions visibles
   const visibleActions = ACTIONS.slice(currentPage * itemsPerPage, (currentPage + 1) * itemsPerPage)
 
   return (
@@ -38,15 +46,15 @@ function ActionsComponent() {
             badge="Notre impact"
             badgeColor="laurel"
             title="Nos Actions"
-            description="Découvrez comment nous faisons une différence dans notre communauté."
+            description="[Votre contenu ici] Découvrez comment nous faisons une différence dans notre communauté."
             centered
             id="actions-title"
           />
         </motion.div>
 
         <div className="relative">
-          {/* Navigation buttons */}
-          {totalPages > 1 && (
+          {/* Navigation buttons - Seulement affichés côté client */}
+          {isMounted && totalPages > 1 && (
             <>
               <button
                 onClick={handlePrevious}
@@ -76,13 +84,7 @@ function ActionsComponent() {
           )}
 
           {/* Actions grid */}
-          <motion.div
-            key={currentPage}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.3 }}
-            className="grid grid-cols-1 gap-8 md:grid-cols-3 px-6 md:px-10"
-          >
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-3 px-6 md:px-10">
             {visibleActions.map((action) => (
               <ActionCard
                 key={action.id}
@@ -92,10 +94,10 @@ function ActionsComponent() {
                 link={action.link}
               />
             ))}
-          </motion.div>
+          </div>
 
-          {/* Pagination indicators */}
-          {totalPages > 1 && (
+          {/* Pagination indicators - Seulement affichés côté client */}
+          {isMounted && totalPages > 1 && (
             <div className="flex justify-center mt-8 space-x-2">
               {Array.from({ length: totalPages }).map((_, index) => (
                 <button

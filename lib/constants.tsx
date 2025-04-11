@@ -136,9 +136,9 @@ export const ACTIONS: Action[] = [
 
 // Données de contact
 export const CONTACT_INFO: ContactInfo = {
-  phone: "+33 1 23 45 67 89",
+  phone: "+299 01 76895423",
   email: "contact@association.org",
-  address: "123 Rue de l'ONG, 75000 Paris",
+  address: "123 Rue de l'Association, Porto-Novo",
   socialLinks: [
     { platform: "instagram", url: "https://instagram.com/ong" },
     { platform: "facebook", url: "https://facebook.com/ong" },

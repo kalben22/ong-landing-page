@@ -20,9 +20,9 @@ export default function Footer() {
         </div>
         <p className="text-sm text-moonlight/80">© {new Date().getFullYear()} Association FLAKO. Tous droits réservés.</p>
         <div className="flex items-center gap-4">
-          <SocialIcon href="#" icon={<Instagram className="h-4 w-4" />} label="Instagram" />
-          <SocialIcon href="#" icon={<Facebook className="h-4 w-4" />} label="Facebook" />
-          <SocialIcon href="#" icon={<Linkedin className="h-4 w-4" />} label="LinkedIn" />
+          <SocialIcon href="https://instagram.com/ong" icon={<Instagram className="h-4 w-4" />} label="Instagram" />
+          <SocialIcon href="https://facebook.com/ong" icon={<Facebook className="h-4 w-4" />} label="Facebook" />
+          <SocialIcon href="https://linkedin.com/company/ong" icon={<Linkedin className="h-4 w-4" />} label="LinkedIn" />
         </div>
       </div>
     </footer>

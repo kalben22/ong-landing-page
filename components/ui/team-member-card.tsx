@@ -1,5 +1,6 @@
 "use client"
 
+import { memo } from "react"
 import { motion } from "framer-motion"
 import Image from "next/image"
 
@@ -10,7 +11,7 @@ interface TeamMemberCardProps {
   bio: string
 }
 
-export function TeamMemberCard({ name, role, image, bio }: TeamMemberCardProps) {
+function TeamMemberCardComponent({ name, role, image, bio }: TeamMemberCardProps) {
   return (
     <motion.div
       variants={{
@@ -23,7 +24,7 @@ export function TeamMemberCard({ name, role, image, bio }: TeamMemberCardProps) 
       <div className="relative">
         <div className="absolute inset-0 rounded-full bg-gradient-to-br from-mustard to-peacock opacity-20 blur-md"></div>
         <Image
-          src={image || "/placeholder.svg"}
+          src={image || "/placeholder.svg?height=120&width=120"}
           alt={name}
           width={120}
           height={120}
@@ -36,3 +37,6 @@ export function TeamMemberCard({ name, role, image, bio }: TeamMemberCardProps) 
     </motion.div>
   )
 }
+
+// Mémoisation du composant pour éviter les re-rendus inutiles
+export const TeamMemberCard = memo(TeamMemberCardComponent)
