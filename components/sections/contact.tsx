@@ -43,9 +43,7 @@ function ContactComponent() {
                   key={link.platform}
                   href={link.url}
                   icon={socialIcons[link.platform]}
-                  label={link.platform.charAt(0).toUpperCase() + link.platform.slice(1)}
-                  variant
-                  label={link.platform.charAt(0).toUpperCase() + link.platform.slice(1)}
+                  label={link.platform.charAt(0).toUpperCase() + link.platform.slice(1)}                 
                   variant="large"
                 />
               ))}
