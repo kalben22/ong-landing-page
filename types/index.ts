@@ -36,6 +36,29 @@ export interface Action {
   link?: string
 }
 
+export interface ActionDetail {
+  id: number
+  title: string
+  description: string[]
+  icon: React.ReactNode
+  link?: string
+  coverImage: string
+  gallery?: {
+    url: string
+    alt: string
+  }[]
+  stats?: {
+    value: string
+    label: string
+  }[]
+  testimonials?: {
+    quote: string
+    name: string
+    role: string
+    avatar?: string
+  }[]
+}
+
 export interface ContactInfo {
   phone: string
   email: string
@@ -48,4 +71,19 @@ export interface FormData {
   lastName: string
   email: string
   message: string
+}
+
+export interface HeroSlide {
+  id: number
+  image: string
+  title: string
+  subtitle: string
+}
+
+export interface Beneficiaire {
+  id: number
+  name: string
+  role: string
+  image: string
+  testimonial: string
 }

@@ -47,5 +47,4 @@ function MissionComponent() {
   )
 }
 
-// Mémoisation du composant pour éviter les re-rendus inutiles
 export default memo(MissionComponent)

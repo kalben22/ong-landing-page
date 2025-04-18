@@ -1,7 +1,6 @@
 "use client"
 
 import { memo, useState, useEffect } from "react"
-import { motion } from "framer-motion"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { SectionContainer } from "@/components/ui/section-container"
 import { SectionHeading } from "@/components/ui/section-heading"
@@ -13,12 +12,14 @@ function ActionsComponent() {
   // Utiliser useState avec lazy initialization pour éviter les problèmes d'hydratation
   const [currentPage, setCurrentPage] = useState(0)
   const [isMounted, setIsMounted] = useState(false)
+  const [isClient, setIsClient] = useState(false)
   const itemsPerPage = 3
   const totalPages = Math.ceil(ACTIONS.length / itemsPerPage)
 
   // S'assurer que le composant est monté côté client avant de rendre des éléments interactifs
   useEffect(() => {
     setIsMounted(true)
+    setIsClient(true)
   }, [])
 
   const handlePrevious = () => {
@@ -29,28 +30,24 @@ function ActionsComponent() {
     setCurrentPage((prev) => Math.min(totalPages - 1, prev + 1))
   }
 
-  // Calculer les actions visibles
-  const visibleActions = ACTIONS.slice(currentPage * itemsPerPage, (currentPage + 1) * itemsPerPage)
+  // Calculer les actions visibles - Toujours afficher les 3 premières au rendu initial
+  const visibleActions = isClient
+    ? ACTIONS.slice(currentPage * itemsPerPage, (currentPage + 1) * itemsPerPage)
+    : ACTIONS.slice(0, itemsPerPage)
 
   return (
     <section id="actions" className="w-full py-16 md:py-24 bg-moonlight" aria-labelledby="actions-title">
       <SectionContainer>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6 }}
-          className="flex flex-col items-center justify-center space-y-4 text-center mb-12"
-        >
+        <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <SectionHeading
             badge="Notre impact"
             badgeColor="laurel"
             title="Nos Actions"
-            description="Découvrez comment nous faisons une différence dans notre communauté."
+            description="[Votre contenu ici] Découvrez comment nous faisons une différence dans notre communauté."
             centered
             id="actions-title"
           />
-        </motion.div>
+        </div>
 
         <div className="relative">
           {/* Navigation buttons - Seulement affichés côté client */}
@@ -88,10 +85,12 @@ function ActionsComponent() {
             {visibleActions.map((action) => (
               <ActionCard
                 key={action.id}
+                id={action.id}
                 title={action.title}
                 description={action.description}
                 icon={action.icon}
                 link={action.link}
+                enableHover={isClient}
               />
             ))}
           </div>

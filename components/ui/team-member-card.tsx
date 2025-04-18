@@ -9,33 +9,60 @@ interface TeamMemberCardProps {
   role: string
   image: string
   bio: string
+  enableHover?: boolean
 }
 
-function TeamMemberCardComponent({ name, role, image, bio }: TeamMemberCardProps) {
-  return (
-    <motion.div
-      variants={{
-        hidden: { opacity: 0, y: 20 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-      }}
-      whileHover={{ y: -5 }}
-      className="flex flex-col items-center space-y-4 rounded-xl bg-moonlight p-6 shadow-md border border-laurel/20"
-    >
+function TeamMemberCardComponent({ name, role, image, bio, enableHover = false }: TeamMemberCardProps) {
+  // Composant de base sans animation pour le rendu initial
+  const baseComponent = (
+    <div className="flex flex-col items-center space-y-4 rounded-xl bg-moonlight p-6 shadow-md border border-laurel/20">
       <div className="relative">
         <div className="absolute inset-0 rounded-full bg-gradient-to-br from-mustard to-peacock opacity-20 blur-md"></div>
-        <Image
-          src={image || "/placeholder.svg?height=120&width=120"}
-          alt={name}
-          width={120}
-          height={120}
-          className="relative z-10 rounded-full object-cover border-2 border-laurel"
-        />
+        <div className="relative z-10 h-[120px] w-[100px] rounded-[50%/60%] overflow-hidden border-2 border-laurel">
+          <Image
+            src={image || "/placeholder.svg?height=120&width=100"}
+            alt={name}
+            fill
+            sizes="100px"
+            className="object-cover"
+            priority
+          />
+        </div>
       </div>
       <h3 className="text-xl font-bold text-peacock">{name}</h3>
       <p className="text-sm text-peacock/70">{role}</p>
       <p className="text-center text-peacock/80">{bio}</p>
-    </motion.div>
+    </div>
   )
+
+  // Si les animations sont activées (côté client), utiliser motion.div
+  if (enableHover) {
+    return (
+      <motion.div
+        whileHover={{ y: -5 }}
+        className="flex flex-col items-center space-y-4 rounded-xl bg-moonlight p-6 shadow-md border border-laurel/20"
+      >
+        <div className="relative">
+          <div className="absolute inset-0 rounded-full bg-gradient-to-br from-mustard to-peacock opacity-20 blur-md"></div>
+          <div className="relative z-10 h-[120px] w-[100px] rounded-[50%/60%] overflow-hidden border-2 border-laurel">
+            <Image
+              src={image || "/placeholder.svg?height=120&width=100"}
+              alt={name}
+              fill
+              sizes="100px"
+              className="object-cover"
+              priority
+            />
+          </div>
+        </div>
+        <h3 className="text-xl font-bold text-peacock">{name}</h3>
+        <p className="text-sm text-peacock/70">{role}</p>
+        <p className="text-center text-peacock/80">{bio}</p>
+      </motion.div>
+    )
+  }
+
+  return baseComponent
 }
 
 // Mémoisation du composant pour éviter les re-rendus inutiles
