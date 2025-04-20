@@ -19,14 +19,7 @@ function TeamMemberCardComponent({ name, role, image, bio, enableHover = false }
       <div className="relative">
         <div className="absolute inset-0 rounded-full bg-gradient-to-br from-mustard to-peacock opacity-20 blur-md"></div>
         <div className="relative z-10 h-[120px] w-[100px] rounded-[50%/60%] overflow-hidden border-2 border-laurel">
-          <Image
-            src={image || "/placeholder.svg?height=120&width=100"}
-            alt={name}
-            fill
-            sizes="100px"
-            className="object-cover"
-            priority
-          />
+          <Image src={image || "/placeholder.svg"} alt={name} fill sizes="100px" className="object-cover" priority />
         </div>
       </div>
       <h3 className="text-xl font-bold text-peacock">{name}</h3>
@@ -45,14 +38,7 @@ function TeamMemberCardComponent({ name, role, image, bio, enableHover = false }
         <div className="relative">
           <div className="absolute inset-0 rounded-full bg-gradient-to-br from-mustard to-peacock opacity-20 blur-md"></div>
           <div className="relative z-10 h-[120px] w-[100px] rounded-[50%/60%] overflow-hidden border-2 border-laurel">
-            <Image
-              src={image || "/placeholder.svg?height=120&width=100"}
-              alt={name}
-              fill
-              sizes="100px"
-              className="object-cover"
-              priority
-            />
+            <Image src={image || "/placeholder.svg"} alt={name} fill sizes="100px" className="object-cover" priority />
           </div>
         </div>
         <h3 className="text-xl font-bold text-peacock">{name}</h3>

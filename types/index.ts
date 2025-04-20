@@ -1,4 +1,5 @@
 import type React from "react"
+// Types communs utilisés dans l'application
 
 export interface SocialLink {
   platform: "instagram" | "facebook" | "linkedin" | "twitter"
