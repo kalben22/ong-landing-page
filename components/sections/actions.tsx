@@ -5,14 +5,19 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 import { SectionContainer } from "@/components/ui/section-container"
 import { SectionHeading } from "@/components/ui/section-heading"
 import { ActionCard } from "@/components/ui/action-card"
-import { ACTIONS } from "@/lib/constants"
+import { ActionModal } from "@/components/ui/action-modals"
+import { ACTIONS, ACTIONS_DETAILS } from "@/lib/constants"
 import { cn } from "@/lib/utils"
+import type { ActionDetail } from "@/types"
 
 function ActionsComponent() {
   // Utiliser useState avec lazy initialization pour éviter les problèmes d'hydratation
   const [currentPage, setCurrentPage] = useState(0)
   const [isMounted, setIsMounted] = useState(false)
   const [isClient, setIsClient] = useState(false)
+  const [selectedAction, setSelectedAction] = useState<ActionDetail | null>(null)
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
   const itemsPerPage = 3
   const totalPages = Math.ceil(ACTIONS.length / itemsPerPage)
 
@@ -30,6 +35,15 @@ function ActionsComponent() {
     setCurrentPage((prev) => Math.min(totalPages - 1, prev + 1))
   }
 
+  const handleShowDetails = (action: ActionDetail) => {
+    setSelectedAction(action)
+    setIsModalOpen(true)
+  }
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false)
+  }
+
   // Calculer les actions visibles - Toujours afficher les 3 premières au rendu initial
   const visibleActions = isClient
     ? ACTIONS.slice(currentPage * itemsPerPage, (currentPage + 1) * itemsPerPage)
@@ -43,7 +57,7 @@ function ActionsComponent() {
             badge="Notre impact"
             badgeColor="laurel"
             title="Nos Actions"
-            description="Découvrez comment nous faisons une différence dans notre communauté."
+            description="[Votre contenu ici] Découvrez comment nous faisons une différence dans notre communauté."
             centered
             id="actions-title"
           />
@@ -82,17 +96,24 @@ function ActionsComponent() {
 
           {/* Actions grid */}
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3 px-6 md:px-10">
-            {visibleActions.map((action) => (
-              <ActionCard
-                key={action.id}
-                id={action.id}
-                title={action.title}
-                description={action.description}
-                icon={action.icon}
-                link={action.link}
-                enableHover={isClient}
-              />
-            ))}
+            {visibleActions.map((action) => {
+              const actionDetails = ACTIONS_DETAILS.find((detail) => detail.id === action.id) || null
+
+              return (
+                <div key={action.id} className="h-full">
+                  <ActionCard
+                    id={action.id}
+                    title={action.title}
+                    description={action.description}
+                    icon={action.icon}
+                    link={action.link}
+                    enableHover={isClient}
+                    onShowDetails={handleShowDetails}
+                    actionDetails={actionDetails}
+                  />
+                </div>
+              )
+            })}
           </div>
 
           {/* Pagination indicators - Seulement affichés côté client */}
@@ -113,6 +134,9 @@ function ActionsComponent() {
           )}
         </div>
       </SectionContainer>
+
+      {/* Modal pour les détails d'action */}
+      <ActionModal action={selectedAction} isOpen={isModalOpen} onClose={handleCloseModal} />
     </section>
   )
 }

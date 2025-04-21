@@ -289,7 +289,7 @@ export const ACTIONS_DETAILS: ActionDetail[] = [
       "En collaboration avec les ministères de l'éducation locaux et d'autres ONG, nous travaillons à améliorer les programmes scolaires et à promouvoir des méthodes d'enseignement innovantes adaptées aux besoins des communautés.",
     ],
     icon: <BarChart className="h-6 w-6 text-moonlight" />,
-    coverImage: "/placeholder.svg?height=400&width=800&text=Action+2:+Programme+d'éducation",
+    coverImage: "/images/team/member1.jpg",
     gallery: [
       { url: "/placeholder.svg?height=200&width=200&text=Classe+rénovée", alt: "Classe rénovée" },
       {
