@@ -403,7 +403,7 @@ export const ACTIONS_DETAILS: ActionDetail[] = [
   },
   {
     id: 6,
-    title: "Action 5: Autonomisation des femmes",
+    title: "Action 6: Autonomisation des femmes",
     description: [
       "Notre programme d'autonomisation des femmes vise à promouvoir l'égalité des genres et à renforcer le pouvoir économique et social des femmes dans les communautés où nous intervenons. Nous croyons que lorsque les femmes sont autonomes, c'est toute la communauté qui en bénéficie.",
       "Nos initiatives comprennent la formation professionnelle, l'alphabétisation, le microcrédit, le soutien aux coopératives féminines et la sensibilisation aux droits des femmes. Nous travaillons également à promouvoir la participation des femmes dans les instances de décision locales.",
