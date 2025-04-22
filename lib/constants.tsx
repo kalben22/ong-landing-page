@@ -428,6 +428,138 @@ export const ACTIONS_DETAILS: ActionDetail[] = [
       { value: "250", label: "Entreprises créées" },
     ],
   },
+  {
+    id: 7,
+    title: "Action 7: Sécurité alimentaire",
+    description: [
+      "Notre programme de sécurité alimentaire vise à garantir que toutes les familles aient accès à une alimentation suffisante, nutritive et culturellement adaptée. Face aux défis du changement climatique et de la croissance démographique, nous travaillons à renforcer la résilience des systèmes alimentaires locaux.",
+      "Nos initiatives comprennent la promotion de l'agriculture durable, la diversification des cultures, l'amélioration des techniques de stockage et de conservation des aliments, et le soutien aux petits producteurs. Nous accordons une attention particulière à l'agriculture familiale et aux pratiques agroécologiques.",
+      "En collaboration avec les communautés locales et les autorités, nous développons également des systèmes d'alerte précoce pour anticiper les crises alimentaires et mettre en place des réponses adaptées.",
+    ],
+    icon: <Sparkles className="h-6 w-6 text-moonlight" />,
+    coverImage: "/placeholder.svg?height=400&width=800&text=Action+7:+Sécurité+alimentaire",
+    gallery: [
+      { url: "/placeholder.svg?height=200&width=200&text=Jardins+communautaires", alt: "Jardins communautaires" },
+      { url: "/placeholder.svg?height=200&width=200&text=Formation+agricole", alt: "Formation agricole" },
+      { url: "/placeholder.svg?height=200&width=200&text=Banque+de+semences", alt: "Banque de semences" },
+      { url: "/placeholder.svg?height=200&width=200&text=Stockage+céréales", alt: "Stockage de céréales" },
+      { url: "/placeholder.svg?height=200&width=200&text=Marché+local", alt: "Marché local" },
+      { url: "/placeholder.svg?height=200&width=200&text=Irrigation", alt: "Système d'irrigation" },
+    ],
+    stats: [
+      { value: "5 000", label: "Agriculteurs formés" },
+      { value: "120", label: "Jardins communautaires" },
+      { value: "35", label: "Banques de semences" },
+      { value: "40%", label: "Augmentation des rendements" },
+      { value: "15", label: "Coopératives soutenues" },
+      { value: "25 000", label: "Personnes nourries" },
+    ],
+    testimonials: [
+      {
+        quote:
+          "Grâce aux nouvelles techniques agricoles, ma production a doublé. Je peux maintenant nourrir ma famille toute l'année et vendre le surplus au marché.",
+        name: "Ousmane Diallo",
+        role: "Agriculteur",
+        avatar: "/placeholder.svg?height=40&width=40&text=OD",
+      },
+      {
+        quote:
+          "Le jardin communautaire a transformé notre village. Nous avons maintenant accès à des légumes frais et variés, ce qui a amélioré la santé de nos enfants.",
+        name: "Fatoumata Bah",
+        role: "Présidente du groupement féminin",
+        avatar: "/placeholder.svg?height=40&width=40&text=FB",
+      },
+    ],
+  },
+  {
+    id: 8,
+    title: "Action 8: Développement économique local",
+    description: [
+      "Notre programme de développement économique local vise à stimuler les économies locales et à créer des opportunités d'emploi et de revenus durables. Nous croyons que le développement économique est un levier essentiel pour réduire la pauvreté et améliorer les conditions de vie des communautés.",
+      "Nos initiatives comprennent le soutien aux petites entreprises, la formation professionnelle, l'accès au microcrédit, le développement de chaînes de valeur locales et la promotion de l'entrepreneuriat, en particulier chez les jeunes et les femmes.",
+      "En favorisant l'économie locale et circulaire, nous contribuons à réduire l'exode rural et à créer des communautés plus résilientes et autonomes.",
+    ],
+    icon: <BarChart className="h-6 w-6 text-moonlight" />,
+    coverImage: "/placeholder.svg?height=400&width=800&text=Action+8:+Développement+économique+local",
+    gallery: [
+      { url: "/placeholder.svg?height=200&width=200&text=Formation+professionnelle", alt: "Formation professionnelle" },
+      { url: "/placeholder.svg?height=200&width=200&text=Petite+entreprise", alt: "Petite entreprise locale" },
+      { url: "/placeholder.svg?height=200&width=200&text=Marché+artisanal", alt: "Marché artisanal" },
+      { url: "/placeholder.svg?height=200&width=200&text=Atelier+couture", alt: "Atelier de couture" },
+      { url: "/placeholder.svg?height=200&width=200&text=Microcrédit", alt: "Distribution de microcrédit" },
+      { url: "/placeholder.svg?height=200&width=200&text=Jeunes+entrepreneurs", alt: "Jeunes entrepreneurs" },
+    ],
+    stats: [
+      { value: "850", label: "Entreprises créées" },
+      { value: "3 500", label: "Emplois générés" },
+      { value: "2 000", label: "Microcrédits accordés" },
+      { value: "75%", label: "Taux de remboursement" },
+      { value: "60%", label: "Entreprises dirigées par des femmes" },
+      { value: "45%", label: "Augmentation des revenus" },
+    ],
+    testimonials: [
+      {
+        quote:
+          "Le microcrédit m'a permis de lancer mon atelier de menuiserie. Aujourd'hui, j'emploie trois jeunes du village et nous recevons des commandes de toute la région.",
+        name: "Mamadou Camara",
+        role: "Menuisier",
+        avatar: "/placeholder.svg?height=40&width=40&text=MC",
+      },
+      {
+        quote:
+          "La formation en gestion d'entreprise a changé ma vision des affaires. J'ai pu développer mon commerce et diversifier mes activités. Mes revenus ont plus que doublé en deux ans.",
+        name: "Kadiatou Bamba",
+        role: "Commerçante",
+        avatar: "/placeholder.svg?height=40&width=40&text=KB",
+      },
+    ],
+  },
+  {
+    id: 9,
+    title: "Action 9: Énergies renouvelables",
+    description: [
+      "Notre programme d'énergies renouvelables vise à promouvoir l'accès à une énergie propre, fiable et abordable pour tous. Dans un contexte de changement climatique et de raréfaction des ressources fossiles, nous croyons que les énergies renouvelables représentent une solution durable pour les communautés rurales et isolées.",
+      "Nos initiatives comprennent l'installation de panneaux solaires, la construction de micro-barrages hydroélectriques, la promotion de foyers améliorés et la formation de techniciens locaux pour l'entretien et la maintenance des équipements.",
+      "En plus de réduire l'empreinte carbone des communautés, ces projets permettent d'améliorer la qualité de vie, de faciliter l'accès à l'éducation et à la santé, et de stimuler le développement économique local.",
+    ],
+    icon: <Globe className="h-6 w-6 text-moonlight" />,
+    coverImage: "/placeholder.svg?height=400&width=800&text=Action+9:+Énergies+renouvelables",
+    gallery: [
+      { url: "/placeholder.svg?height=200&width=200&text=Panneaux+solaires", alt: "Installation de panneaux solaires" },
+      { url: "/placeholder.svg?height=200&width=200&text=Micro-barrage", alt: "Micro-barrage hydroélectrique" },
+      { url: "/placeholder.svg?height=200&width=200&text=Foyers+améliorés", alt: "Foyers améliorés" },
+      { url: "/placeholder.svg?height=200&width=200&text=Formation+techniciens", alt: "Formation de techniciens" },
+      { url: "/placeholder.svg?height=200&width=200&text=Éclairage+école", alt: "Éclairage d'une école" },
+      {
+        url: "/placeholder.svg?height=200&width=200&text=Centre+santé+solaire",
+        alt: "Centre de santé alimenté par énergie solaire",
+      },
+    ],
+    stats: [
+      { value: "120", label: "Villages électrifiés" },
+      { value: "5 000", label: "Foyers équipés" },
+      { value: "85", label: "Écoles et centres de santé" },
+      { value: "150", label: "Techniciens formés" },
+      { value: "70%", label: "Réduction de la déforestation" },
+      { value: "40 000", label: "Tonnes de CO2 évitées" },
+    ],
+    testimonials: [
+      {
+        quote:
+          "L'électricité solaire a transformé notre centre de santé. Nous pouvons maintenant conserver les vaccins, utiliser des équipements médicaux et accueillir les patients même la nuit.",
+        name: "Dr. Salimata Koné",
+        role: "Médecin chef",
+        avatar: "/placeholder.svg?height=40&width=40&text=SK",
+      },
+      {
+        quote:
+          "Grâce aux panneaux solaires, mes enfants peuvent étudier le soir. Leurs résultats scolaires se sont nettement améliorés. De plus, je peux recharger mon téléphone et rester en contact avec ma famille.",
+        name: "Bakary Sangaré",
+        role: "Père de famille",
+        avatar: "/placeholder.svg?height=40&width=40&text=BS",
+      },
+    ],
+  },
 ]
 
 // Données de contact
