@@ -267,16 +267,17 @@ export const ACTIONS_DETAILS: ActionDetail[] = [
     testimonials: [
       {
         quote:
-          "Grâce à l'ONG, notre village a maintenant accès à l'eau potable. Cela a changé nos vies de façon incroyable.",
-        name: "Marie Dupont",
-        role: "Habitante du village de Kinsasa",
-        avatar: "/placeholder.svg?height=40&width=40&text=MD",
+          "Les méthodes pédagogiques que j'ai apprises lors des formations ont transformé ma façon d'enseigner. Mes élèves sont plus engagés et apprennent mieux.",
+        name: "Sophie Kama",
+        role: "Enseignante",
+        avatar: "/placeholder.svg?height=40&width=40&text=SK",
       },
       {
-        quote: "Les formations agricoles m'ont permis de doubler ma production et de mieux nourrir ma famille.",
-        name: "Jean Mbeki",
-        role: "Agriculteur",
-        avatar: "/placeholder.svg?height=40&width=40&text=JM",
+        quote:
+          "Grâce à la bourse d'études, j'ai pu poursuivre mes études secondaires et je rêve maintenant de devenir médecin pour aider ma communauté.",
+        name: "Thomas Ndiaye",
+        role: "Élève boursier",
+        avatar: "/placeholder.svg?height=40&width=40&text=TN",
       },
     ],
   },
@@ -308,22 +309,6 @@ export const ACTIONS_DETAILS: ActionDetail[] = [
       { value: "98%", label: "Taux de réussite" },
       { value: "250", label: "Bourses attribuées" },
       { value: "8", label: "Bibliothèques créées" },
-    ],
-    testimonials: [
-      {
-        quote:
-          "Les méthodes pédagogiques que j'ai apprises lors des formations ont transformé ma façon d'enseigner. Mes élèves sont plus engagés et apprennent mieux.",
-        name: "Sophie Kama",
-        role: "Enseignante",
-        avatar: "/placeholder.svg?height=40&width=40&text=SK",
-      },
-      {
-        quote:
-          "Grâce à la bourse d'études, j'ai pu poursuivre mes études secondaires et je rêve maintenant de devenir médecin pour aider ma communauté.",
-        name: "Thomas Ndiaye",
-        role: "Élève boursier",
-        avatar: "/placeholder.svg?height=40&width=40&text=TN",
-      },
     ],
   },
   {
@@ -358,22 +343,6 @@ export const ACTIONS_DETAILS: ActionDetail[] = [
       { value: "12", label: "Centres de recyclage" },
       { value: "85%", label: "Réduction des déchets" },
     ],
-    testimonials: [
-      {
-        quote:
-          "Les techniques d'agriculture durable m'ont permis de cultiver même pendant la saison sèche tout en préservant la qualité de mes sols.",
-        name: "Ibrahim Koné",
-        role: "Agriculteur",
-        avatar: "/placeholder.svg?height=40&width=40&text=IK",
-      },
-      {
-        quote:
-          "Grâce aux panneaux solaires, notre centre de santé peut maintenant fonctionner 24h/24 et conserver les vaccins au frais.",
-        name: "Dr. Aminata Diallo",
-        role: "Médecin de village",
-        avatar: "/placeholder.svg?height=40&width=40&text=AD",
-      },
-    ],
   },
   {
     id: 4,
@@ -404,22 +373,6 @@ export const ACTIONS_DETAILS: ActionDetail[] = [
       { value: "95%", label: "Taux de vaccination" },
       { value: "-60%", label: "Réduction du paludisme" },
     ],
-    testimonials: [
-      {
-        quote:
-          "Avant, je devais marcher 15 km pour accéder à des soins. Maintenant, avec le centre de santé dans notre village, ma famille peut être soignée rapidement.",
-        name: "Fatou Sow",
-        role: "Mère de famille",
-        avatar: "/placeholder.svg?height=40&width=40&text=FS",
-      },
-      {
-        quote:
-          "La formation que j'ai reçue m'a donné les compétences pour aider ma communauté. Je suis fier de pouvoir sauver des vies.",
-        name: "Pierre Mensah",
-        role: "Agent de santé communautaire",
-        avatar: "/placeholder.svg?height=40&width=40&text=PM",
-      },
-    ],
   },
   {
     id: 5,
@@ -446,22 +399,6 @@ export const ACTIONS_DETAILS: ActionDetail[] = [
       { value: "85%", label: "Taux de remboursement" },
       { value: "30%", label: "Augmentation des revenus" },
       { value: "250", label: "Entreprises créées" },
-    ],
-    testimonials: [
-      {
-        quote:
-          "Grâce à la formation en couture et au microcrédit, j'ai pu ouvrir mon atelier. Aujourd'hui, j'emploie trois autres femmes et je peux payer les études de mes enfants.",
-        name: "Aïcha Diop",
-        role: "Entrepreneuse",
-        avatar: "/placeholder.svg?height=40&width=40&text=AD",
-      },
-      {
-        quote:
-          "Les cours d'alphabétisation m'ont ouvert un nouveau monde. Maintenant, je peux lire les ordonnances médicales de mes enfants et gérer mon petit commerce.",
-        name: "Mariam Touré",
-        role: "Commerçante",
-        avatar: "/placeholder.svg?height=40&width=40&text=MT",
-      },
     ],
   },
 ]
