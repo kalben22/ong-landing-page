@@ -247,7 +247,7 @@ export const ACTIONS_DETAILS: ActionDetail[] = [
       "Grâce à la générosité de nos donateurs et à l'engagement de nos bénévoles, nous continuons d'étendre notre impact et d'améliorer la vie de nombreuses personnes chaque année.",
     ],
     icon: <Sparkles className="h-6 w-6 text-moonlight" />,
-    coverImage: "/placeholder.svg?height=400&width=800&text=Action+1:+Soutien+aux+communautés",
+    coverImage: "/images/team/member1.jpg",
     gallery: [
       { url: "/images/team/member1.jpg", alt: "Distribution d'eau potable" },
       { url: "/images/team/member1.jpg", alt: "École rénovée" },
