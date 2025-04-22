@@ -401,6 +401,33 @@ export const ACTIONS_DETAILS: ActionDetail[] = [
       { value: "250", label: "Entreprises créées" },
     ],
   },
+  {
+    id: 6,
+    title: "Action 5: Autonomisation des femmes",
+    description: [
+      "Notre programme d'autonomisation des femmes vise à promouvoir l'égalité des genres et à renforcer le pouvoir économique et social des femmes dans les communautés où nous intervenons. Nous croyons que lorsque les femmes sont autonomes, c'est toute la communauté qui en bénéficie.",
+      "Nos initiatives comprennent la formation professionnelle, l'alphabétisation, le microcrédit, le soutien aux coopératives féminines et la sensibilisation aux droits des femmes. Nous travaillons également à promouvoir la participation des femmes dans les instances de décision locales.",
+      "En collaboration avec des partenaires locaux et internationaux, nous luttons contre les pratiques discriminatoires et les violences basées sur le genre, tout en valorisant le rôle essentiel des femmes dans le développement communautaire.",
+    ],
+    icon: <BarChart className="h-6 w-6 text-moonlight" />,
+    coverImage: "/placeholder.svg?height=400&width=800&text=Action+5:+Autonomisation+des+femmes",
+    gallery: [
+      { url: "/placeholder.svg?height=200&width=200&text=Formation+professionnelle", alt: "Formation professionnelle" },
+      { url: "/placeholder.svg?height=200&width=200&text=Coopérative+féminine", alt: "Coopérative féminine" },
+      { url: "/placeholder.svg?height=200&width=200&text=Cours+d'alphabétisation", alt: "Cours d'alphabétisation" },
+      { url: "/placeholder.svg?height=200&width=200&text=Microcrédit", alt: "Programme de microcrédit" },
+      { url: "/placeholder.svg?height=200&width=200&text=Sensibilisation", alt: "Sensibilisation aux droits" },
+      { url: "/placeholder.svg?height=200&width=200&text=Leadership+féminin", alt: "Formation au leadership" },
+    ],
+    stats: [
+      { value: "3 500", label: "Femmes formées" },
+      { value: "45", label: "Coopératives soutenues" },
+      { value: "1 200", label: "Microcrédits accordés" },
+      { value: "85%", label: "Taux de remboursement" },
+      { value: "30%", label: "Augmentation des revenus" },
+      { value: "250", label: "Entreprises créées" },
+    ],
+  },
 ]
 
 // Données de contact
