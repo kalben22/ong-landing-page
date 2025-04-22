@@ -57,7 +57,7 @@ function ActionsComponent() {
             badge="Notre impact"
             badgeColor="laurel"
             title="Nos Actions"
-            description="[Votre contenu ici] Découvrez comment nous faisons une différence dans notre communauté."
+            description=" Découvrez comment nous faisons une différence dans notre communauté."
             centered
             id="actions-title"
           />
