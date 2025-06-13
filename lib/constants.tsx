@@ -52,7 +52,7 @@ export const BENEFICIAIRES: Beneficiaire[] = [
     role: "Bénéficiaire du programme d'éducation",
     image: "/images/beneficiaires/Image1.jpg",
     testimonial:
-      "Grâce à l'ONG, j'ai pu terminer mes études et trouver un emploi stable.",
+      "Grâce à l'ONG, j'ai pu terminer mes études et trouver un emploi stable. Ici il s'agit d'un texte.",
   },
   {
     id: 2,
@@ -102,7 +102,7 @@ export const HISTOIRE_SECTIONS: HistoireSection[] = [
     id: 1,
     title: "Nos débuts",
     content: [
-      " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquam nisl.",
+      " Je vais commencer l'histoire par dire ceci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquam nisl.",
       "Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquam nisl.",
     ],
     image: "/images/histoire/debut.jpg",
@@ -133,15 +133,15 @@ export const HISTOIRE_SECTIONS: HistoireSection[] = [
 export const TEAM_MEMBERS: TeamMember[] = [
   {
     id: 1,
-    name: "Nom Prénom",
-    role: "Fonction",
+    name: "Jean Marie",
+    role: "CEO",
     image: "/images/team/member1.jpg",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia.",
+    bio: "Tous ce que je veux. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia.",
   },
   {
     id: 2,
-    name: "Nom Prénom",
-    role: "Fonction",
+    name: "Elisé MONVOY",
+    role: "CTO",
     image: "/images/team/member3.jpg",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia.",
   },
