@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Association FLOKA",
     description: "Ensemble, créons un impact durable",
-    url: "https://www.association.org",
+    url: "https://floka.vercel.app",
     siteName: "Association FLOKA",
     locale: "fr_FR",
     type: "website",
