@@ -215,28 +215,28 @@ export const VALUES: Value[] = [
 export const ACTIONS: Action[] = [
   {
     id: 1,
-    title: "Action 1",
-    description: " Description de l'action et de son impact sur la communauté et les bénéficiaires.",
+    title: "Cours d'Alphabétisation",
+    description: "Programme d’alphabétisation lancé en 2022 à Ouidah pour autonomiser les femmes vulnérables via des cours de base, en partenariat avec la mairie et soutenu par des bénévoles.",
     icon: <Sparkles className="h-6 w-6 text-moonlight" />,
     link: "#en-savoir-plus-1",
   },
   {
     id: 2,
-    title: "Action 2",
-    description: " Description de l'action et de son impact sur la communauté et les bénéficiaires.",
+    title: "Cours d'informatique",
+    description: "Programme d’initiation à l’informatique pour les jeunes au Bénin, visant à réduire la fracture numérique et renforcer l’autonomie, avec une vision à long terme d’inclusion des femmes.",
     icon: <BarChart className="h-6 w-6 text-moonlight" />,
     link: "#en-savoir-plus-2",
   },
   {
     id: 3,
-    title: "Action 3",
-    description: " Description de l'action et de son impact sur la communauté et les bénéficiaires.",
+    title: "Soutien scolaire enfants",
+    description: "Programme de soutien scolaire lancé en 2023 à Ouidah pour aider les enfants à renforcer leurs compétences pendant les vacances, quel que soit leur milieu social.",
     icon: <Globe className="h-6 w-6 text-moonlight" />,
     link: "#en-savoir-plus-3",
   },
   {
     id: 4,
-    title: "Action 4",
+    title: "Espace de transmission intergénérationnel",
     description: " Description de l'action et de son impact sur la communauté et les bénéficiaires.",
     icon: <Sparkles className="h-6 w-6 text-moonlight" />,
     link: "#en-savoir-plus-4",
@@ -244,7 +244,7 @@ export const ACTIONS: Action[] = [
   {
     id: 5,
     title: "Action 5",
-    description: " Description de l'action et de son impact sur la communauté et les bénéficiaires.",
+    description: "Programme intergénérationnel en cours de création pour favoriser l’échange de savoirs entre générations, renforcer les liens sociaux et valoriser chaque individu, notamment retraités et sans emploi.",
     icon: <BarChart className="h-6 w-6 text-moonlight" />,
     link: "#en-savoir-plus-5",
   },
@@ -254,11 +254,14 @@ export const ACTIONS: Action[] = [
 export const ACTIONS_DETAILS: ActionDetail[] = [
   {
     id: 1,
-    title: "Action 1: Soutien aux communautés locales",
+    title: "Cours d'Alphabétisation",
     description: [
-      "Notre programme de soutien aux communautés locales vise à améliorer les conditions de vie des populations vulnérables dans les zones rurales. Nous travaillons en étroite collaboration avec les leaders locaux pour identifier les besoins les plus urgents et mettre en place des solutions durables.",
-      "Depuis le lancement de ce programme en 2018, nous avons pu aider plus de 1500 familles à travers 12 villages. Nos interventions se concentrent sur l'accès à l'eau potable, l'éducation des enfants et le développement de projets générateurs de revenus.",
-      "Grâce à la générosité de nos donateurs et à l'engagement de nos bénévoles, nous continuons d'étendre notre impact et d'améliorer la vie de nombreuses personnes chaque année.",
+      "Notre programme de cours d’alphabétisation s’adresse aux communautés locales de Ouidah, au Bénin. Il vise à améliorer les conditions de vie des populations vulnérables.",
+      "A ce jour, il s’adresse principalement aux femmes; ce qui renforce leur pouvoir économique et social.",
+      "Nous travaillons avec la mairie de Ouidah et en étroite collaboration avec les locaux pour identifier des besoins et mettre en place des solutions durables.",
+      "Depuis le lancement de ce programme non lucratif en 2022, nous avons pu accompagner une vingtaine de femmes venant principalement de la ville de Ouidah.",
+      "Nos interventions se concentrent sur des cours de français et de mathématiques de base.",
+      "Grâce à la générosité de nos donateurs et à l'engagement de nos bénévoles, nous comptons étendre notre impact à d’autres villes si possible et donc à améliorer la vie d’autres femmes chaque année.",
     ],
     icon: <Sparkles className="h-6 w-6 text-moonlight" />,
     coverImage: "/images/team/member1.jpg",
@@ -278,30 +281,14 @@ export const ACTIONS_DETAILS: ActionDetail[] = [
       { value: "85%", label: "Taux de satisfaction" },
       { value: "300+", label: "Bénévoles impliqués" },
     ],
-    testimonials: [
-      {
-        quote:
-          "Les méthodes pédagogiques que j'ai apprises lors des formations ont transformé ma façon d'enseigner. Mes élèves sont plus engagés et apprennent mieux.",
-        name: "Sophie Kama",
-        role: "Enseignante",
-        avatar: "/images/team/member1.jpg",
-      },
-      {
-        quote:
-          "Grâce à la bourse d'études, j'ai pu poursuivre mes études secondaires et je rêve maintenant de devenir médecin pour aider ma communauté.",
-        name: "Thomas Ndiaye",
-        role: "Élève boursier",
-        avatar: "/images/team/member1.jpg",
-      },
-    ],
   },
   {
     id: 2,
-    title: "Action 2: Programme d'éducation",
+    title: "Cours d'informatique",
     description: [
-      "Notre programme d'éducation vise à garantir que tous les enfants, quelles que soient leurs origines socio-économiques, aient accès à une éducation de qualité. Nous croyons fermement que l'éducation est la clé pour briser le cycle de la pauvreté et permettre aux jeunes de construire un avenir meilleur.",
-      "Ce programme comprend la rénovation d'écoles, la formation des enseignants, la distribution de fournitures scolaires et la mise en place de bourses d'études pour les élèves les plus méritants. Nous organisons également des activités parascolaires pour développer la créativité et les compétences sociales des enfants.",
-      "En collaboration avec les ministères de l'éducation locaux et d'autres ONG, nous travaillons à améliorer les programmes scolaires et à promouvoir des méthodes d'enseignement innovantes adaptées aux besoins des communautés.",
+     "Notre programme de cours d’informatique vise à réduire la fracture numérique, à renforcer l’autonomie, renforcer le lien social et favoriser la formation au numérique du jeune public béninois.",
+     "Les cours comprennent la prise en main de l’outil informatique, l’initiation aux logiciels de bureautique et à la gestion des réseaux sociaux.",
+    "Nous souhaitons également à long terme, promouvoir la formation au numérique auprès des femmes afin d'accroître leur autonomie dans un monde en mutation.",
     ],
     icon: <BarChart className="h-6 w-6 text-moonlight" />,
     coverImage: "/images/team/member1.jpg",
@@ -327,11 +314,13 @@ export const ACTIONS_DETAILS: ActionDetail[] = [
   },
   {
     id: 3,
-    title: "Action 3: Protection de l'environnement",
+    title: "Soutien scolaire enfants",
     description: [
-      "Notre programme de protection de l'environnement vise à préserver les écosystèmes locaux tout en sensibilisant les communautés à l'importance de la durabilité environnementale. Face aux défis du changement climatique, nous croyons qu'il est essentiel d'agir localement pour avoir un impact global.",
-      "Nos initiatives comprennent des campagnes de reboisement, la promotion de pratiques agricoles durables, la gestion des déchets et la protection des ressources en eau. Nous travaillons également à développer des sources d'énergie renouvelable adaptées aux besoins des communautés rurales.",
-      "En impliquant activement les jeunes dans nos projets environnementaux, nous cherchons à créer une nouvelle génération de défenseurs de l'environnement qui pourront continuer ce travail essentiel dans le futur.",
+      "Notre programme de cours de soutien vise à garantir que tous les enfants, quelles que soient leurs origines socio-économiques, puisse renforcer pendant les vacances leur niveau scolaire.",
+      "Nous croyons fermement que l'éducation est la clé pour construire un avenir meilleur.",
+      "Depuis le lancement en 2023, nous avons pu soutenir une soixantaine d’enfants venant de plusieurs écoles primaires dans la commune de Ouidah, pendant les vacances scolaires.",
+      "Nos actions se concentrent sur le renforcement des compétences.",
+      "Grâce à la générosité de nos donateurs, à l'engagement de nos bénévoles, et la confiance des parents, nous continuons d’élargir notre impact.",
     ],
     icon: <Globe className="h-6 w-6 text-moonlight" />,
     coverImage: "/placeholder.svg?height=400&width=800&text=Action+3:+Protection+de+l'environnement",
@@ -360,11 +349,10 @@ export const ACTIONS_DETAILS: ActionDetail[] = [
   },
   {
     id: 4,
-    title: "Action 4: Santé communautaire",
+    title: "Espace de transmission intergénérationnel",
     description: [
-      "Notre programme de santé communautaire vise à améliorer l'accès aux soins de santé de base pour les populations les plus vulnérables. Nous croyons que la santé est un droit fondamental et travaillons à éliminer les obstacles qui empêchent certaines communautés d'accéder à des services de santé de qualité.",
-      "Nos initiatives comprennent la formation d'agents de santé communautaire, l'organisation de campagnes de vaccination, la distribution de moustiquaires imprégnées, la sensibilisation à l'hygiène et la construction ou rénovation de centres de santé dans les zones reculées.",
-      "Nous accordons une attention particulière à la santé maternelle et infantile, ainsi qu'à la prévention des maladies transmissibles comme le paludisme, la tuberculose et le VIH/SIDA.",
+     "Nous travaillons à la création d’un programme de transmission intergénérationnel destinés à favoriser l’échange de savoir,", 
+     "d’expérience et de compétence entre les générations.",
     ],
     icon: <Sparkles className="h-6 w-6 text-moonlight" />,
     coverImage: "/placeholder.svg?height=400&width=800&text=Action+4:+Santé+communautaire",
@@ -387,7 +375,7 @@ export const ACTIONS_DETAILS: ActionDetail[] = [
       { value: "95%", label: "Taux de vaccination" },
       { value: "-60%", label: "Réduction du paludisme" },
     ],
-  },
+  }, 
   {
     id: 5,
     title: "Action 5: Autonomisation des femmes",
