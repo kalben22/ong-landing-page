@@ -102,8 +102,9 @@ export const HISTOIRE_SECTIONS: HistoireSection[] = [
     id: 1,
     title: "Nos débuts",
     content: [
-      " Je vais commencer l'histoire par dire ceci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquam nisl.",
-      "Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquam nisl.",
+      "L’aventure de l’association Floka trouve ses racines dans l’engagement d’un grand-père visionnaire, fondateur de la première école primaire et du premier collège privés au Bénin : Le cours Floka. ",
+      "Ce lieu d’apprentissage, porteur d’espoir et de savoir, a profondément marqué les esprits et a naturellement inspiré le nom de notre association. Animés par ce même désir de transmission et de partage, nous, les membres fondateurs, avons souhaité prolonger cet héritage.",
+      "Face aux inégalités d’accès à l’éducation et à l’arrivée des nouvelles technologies, nous avons décidé de structurer notre engagement en créant l’association Floka, dédiée à la lutte contre l’illettrisme, l’illectronisme et l’absence d’espace de partage entre générations. ",
     ],
     image: "/images/histoire/debut.jpg",
     imageAlt: "Les débuts de notre ONG",
@@ -112,8 +113,8 @@ export const HISTOIRE_SECTIONS: HistoireSection[] = [
     id: 2,
     title: "Notre évolution",
     content: [
-      " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl.",
-      "Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquam nisl.",
+      "Depuis sa création en 2022, l'association Floka a progressivement élargi son champ d'action. Elle a d'abord mis en place des cours d'alphabétisation destinés aux personnes en difficulté avec la lecture et l'écriture.",
+      "En 2023, un programme de soutien scolaire pendant les vacances a été intégré afin d'accompagner les enfants dans leur parcours éducatif.",
     ],
     image: "/images/histoire/evolution.jpg",
     imageAlt: "L'évolution de notre ONG",
@@ -122,7 +123,8 @@ export const HISTOIRE_SECTIONS: HistoireSection[] = [
     id: 3,
     title: "Aujourd'hui",
     content: [
-      " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl.",
+      "Et plus récemment, en 2024, des cours d'initiation à l'informatique ont été lancés, amorçant ainsi notre engagement contre l'illectronisme.",
+      "Ces actions concrètes témoignent de notre volonté constante d'être utiles, accessibles et à l'écoute des besoins de notre communauté.",
     ],
     image: "/images/histoire/aujourdhui.jpg",
     imageAlt: "Notre ONG aujourd'hui",
@@ -133,36 +135,35 @@ export const HISTOIRE_SECTIONS: HistoireSection[] = [
 export const TEAM_MEMBERS: TeamMember[] = [
   {
     id: 1,
-    name: "Jean Marie",
-    role: "CEO",
+    name: "Elvire WADOTCHEDOHOUN",
+    role: "Fondatrice & Présidente",
     image: "/images/team/member1.jpg",
-    bio: "Tous ce que je veux. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia.",
-  },
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia.",},
   {
     id: 2,
-    name: "Elisé MONVOY",
-    role: "CTO",
+    name: "Leatitia OWENDET",
+    role: "Fondateur & SG",
     image: "/images/team/member3.jpg",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia.",
   },
   {
     id: 3,
-    name: "Charles Dupont",
-    role: "Directeur des opérations",
+    name: "Ismene CLEDJO",
+    role: "Fondateur & Treso",
     image: "/images/team/member2.jpg",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia.",
   },
   {
     id: 4,
-    name: "Marie Claire",
-    role: "Responsable des partenariats",
+    name: "Gloria KADJA",
+    role: "SGA",
     image: "/images/team/member2.jpg",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia.",
   },
   {
     id: 5,
-    name: "Ibrahim Ndiaye",
-    role: "Responsable de la communication",
+    name: "Bricette",
+    role: "Responsable RS",
     image: "/images/team/member1.jpg",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia.",
   },
@@ -189,23 +190,23 @@ export const TEAM_MEMBERS: TeamMember[] = [
   },
 ]
 
-// Données des valeurs de l'association
+// Données des missions de l'association
 export const VALUES: Value[] = [
   {
     id: 1,
-    title: "Compassion",
+    title: "Transmission",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     icon: <Heart className="h-6 w-6 text-moonlight" />,
   },
   {
     id: 2,
-    title: "Communauté",
+    title: "Solidarité",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     icon: <Users className="h-6 w-6 text-moonlight" />,
   },
   {
     id: 3,
-    title: "Impact",
+    title: "Connaissance",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     icon: <Target className="h-6 w-6 text-moonlight" />,
   },
@@ -215,7 +216,7 @@ export const VALUES: Value[] = [
 export const ACTIONS: Action[] = [
   {
     id: 1,
-    title: "Cours d'Alphabétisation",
+    title: "Cours d'alphabétisation",
     description: "Programme d’alphabétisation lancé en 2022 à Ouidah pour autonomiser les femmes vulnérables via des cours de base, en partenariat avec la mairie et soutenu par des bénévoles.",
     icon: <Sparkles className="h-6 w-6 text-moonlight" />,
     link: "#en-savoir-plus-1",
@@ -241,20 +242,13 @@ export const ACTIONS: Action[] = [
     icon: <Sparkles className="h-6 w-6 text-moonlight" />,
     link: "#en-savoir-plus-4",
   },
-  {
-    id: 5,
-    title: "Action 5",
-    description: "Programme intergénérationnel en cours de création pour favoriser l’échange de savoirs entre générations, renforcer les liens sociaux et valoriser chaque individu, notamment retraités et sans emploi.",
-    icon: <BarChart className="h-6 w-6 text-moonlight" />,
-    link: "#en-savoir-plus-5",
-  },
 ]
 
 // Données détaillées des actions pour les modales
 export const ACTIONS_DETAILS: ActionDetail[] = [
   {
     id: 1,
-    title: "Cours d'Alphabétisation",
+    title: "Cours d'alphabétisation",
     description: [
       "Notre programme de cours d’alphabétisation s’adresse aux communautés locales de Ouidah, au Bénin. Il vise à améliorer les conditions de vie des populations vulnérables.",
       "A ce jour, il s’adresse principalement aux femmes; ce qui renforce leur pouvoir économique et social.",
@@ -353,6 +347,10 @@ export const ACTIONS_DETAILS: ActionDetail[] = [
     description: [
      "Nous travaillons à la création d’un programme de transmission intergénérationnel destinés à favoriser l’échange de savoir,", 
      "d’expérience et de compétence entre les générations.",
+     "Nous croyons que garder un cordon entre les générations passées, présentes et à venir, est une force pour le bien de nos communautés", 
+     "afin de renforcer les liens sociaux, favoriser l’apprentissage mutuel, préserver la mémoire et les savoir-faires.",
+     "Nous accorderons une attention particulière aux personnes retraités et aux personnes sans emploi,", 
+     "car chaque personne à un don à partager avec la société.",
     ],
     icon: <Sparkles className="h-6 w-6 text-moonlight" />,
     coverImage: "/placeholder.svg?height=400&width=800&text=Action+4:+Santé+communautaire",

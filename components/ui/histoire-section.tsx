@@ -24,7 +24,7 @@ export function HistoireSection({ title, content, image, imageAlt, reverse = fal
         <h3 className="text-xl md:text-2xl font-bold text-peacock">{title}</h3>
         <div className="space-y-3">
           {content.map((paragraph, index) => (
-            <p key={index} className="text-sm md:text-base text-peacock/80">
+            <p key={index} className="text-sm md:text-base text-peacock/80 text-justify">
               {paragraph.replace(/Association/g, "ONG")}
             </p>
           ))}
