@@ -564,9 +564,9 @@ export const ACTIONS_DETAILS: ActionDetail[] = [
 
 // Données de contact
 export const CONTACT_INFO: ContactInfo = {
-  phone: "+229 01 xx xx xx xx",
-  email: "contact@association.org",
-  address: "123 Rue, 75000 Porto-Novo, Bénin",
+  phone: "+33 6 72 36 38 59 & +229 01 58 39 92 28 ",
+  email: "bureau@fondationfloka.org",
+  address: "Maison Copao, ancienne route inter-Etats, Zomai-Kpota, Ouidah, Bénin",
   socialLinks: [
     { platform: "instagram", url: "https://instagram.com/ong" },
     { platform: "facebook", url: "https://facebook.com/ong" },
