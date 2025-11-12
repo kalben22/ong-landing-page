@@ -50,7 +50,7 @@ export const BENEFICIAIRES: Beneficiaire[] = [
     id: 1,
     name: "Marie Dupont",
     role: "Bénéficiaire du programme d'éducation",
-    image: "/images/beneficiaires/Image1.jpg",
+    image: "/images/beneficiaires/benef1.jpg",
     testimonial:
       "Grâce à l'ONG, j'ai pu terminer mes études et trouver un emploi stable. Ici il s'agit d'un texte.",
   },
@@ -137,7 +137,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     id: 1,
     name: "Elvire WADOTCHEDOHOUN",
     role: "Fondatrice & Présidente",
-    image: "/images/team/member1.jpg",
+    image: "/images/team/users.jpg",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia.",},
   {
     id: 2,
@@ -195,19 +195,19 @@ export const VALUES: Value[] = [
   {
     id: 1,
     title: "Transmission",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Transmettre savoirs et compétences pour un avenir meilleur.",
     icon: <Heart className="h-6 w-6 text-moonlight" />,
   },
   {
     id: 2,
     title: "Solidarité",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Agir ensemble pour un avenir meilleur.",
     icon: <Users className="h-6 w-6 text-moonlight" />,
   },
   {
     id: 3,
     title: "Connaissance",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Partager le savoir pour grandir ensemble.",
     icon: <Target className="h-6 w-6 text-moonlight" />,
   },
 ]
@@ -217,7 +217,7 @@ export const ACTIONS: Action[] = [
   {
     id: 1,
     title: "Cours d'alphabétisation",
-    description: "Programme d’alphabétisation lancé en 2022 à Ouidah pour autonomiser les femmes vulnérables via des cours de base, en partenariat avec la mairie et soutenu par des bénévoles.",
+    description: "Notre programme de cours d’alphabétisation s’adresse aux communautés locales de Ouidah, au Bénin. Il vise à améliorer les conditions de vie des populations vulnérables. À ce jour, il s’adresse principalement aux femmes, renforçant ainsi leur pouvoir économique et social. Nous bénéficions du soutien de la mairie de Ouidah, qui nous a permis d’obtenir une salle appartenant à la ville, moyennant une petite participation. Cet appui facilite la mise en œuvre de nos activités dans de bonnes conditions. Depuis le lancement de ce programme non lucratif en 2022, nous avons pu accompagner une vingtaine de femmes venant principalement de la ville de Ouidah. Nos interventions se concentrent sur des cours de français et de mathématiques de base. Grâce à la générosité de nos donateurs et à l’engagement de nos bénévoles, nous comptons étendre notre impact à d’autres villes si possible, afin d’améliorer la vie d’un plus grand nombre de femmes chaque année.",
     icon: <Sparkles className="h-6 w-6 text-moonlight" />,
     link: "#en-savoir-plus-1",
   },
@@ -251,11 +251,11 @@ export const ACTIONS_DETAILS: ActionDetail[] = [
     title: "Cours d'alphabétisation",
     description: [
       "Notre programme de cours d’alphabétisation s’adresse aux communautés locales de Ouidah, au Bénin. Il vise à améliorer les conditions de vie des populations vulnérables.",
-      "A ce jour, il s’adresse principalement aux femmes; ce qui renforce leur pouvoir économique et social.",
-      "Nous travaillons avec la mairie de Ouidah et en étroite collaboration avec les locaux pour identifier des besoins et mettre en place des solutions durables.",
+      "À ce jour, il s’adresse principalement aux femmes, renforçant ainsi leur pouvoir économique et social.",
+      "Nous bénéficions du soutien de la mairie de Ouidah, qui nous a permis d’obtenir une salle appartenant à la ville, moyennant une petite participation. Cet appui facilite la mise en œuvre de nos activités dans de bonnes conditions.",
       "Depuis le lancement de ce programme non lucratif en 2022, nous avons pu accompagner une vingtaine de femmes venant principalement de la ville de Ouidah.",
       "Nos interventions se concentrent sur des cours de français et de mathématiques de base.",
-      "Grâce à la générosité de nos donateurs et à l'engagement de nos bénévoles, nous comptons étendre notre impact à d’autres villes si possible et donc à améliorer la vie d’autres femmes chaque année.",
+      "Grâce à la générosité de nos donateurs et à l’engagement de nos bénévoles, nous comptons étendre notre impact à d’autres villes si possible, afin d’améliorer la vie d’un plus grand nombre de femmes chaque année.",
     ],
     icon: <Sparkles className="h-6 w-6 text-moonlight" />,
     coverImage: "/images/team/member1.jpg",

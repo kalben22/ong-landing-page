@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="container flex flex-col items-center justify-between gap-4 px-4 md:flex-row md:px-6">
         <div className="flex items-center gap-2">
           <Image
-            src="/images/logo.svg"
+            src="/images/logo.jpg"
             alt="Logo de l'Association"
             width={32}
             height={32}

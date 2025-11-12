@@ -95,10 +95,12 @@ export default function Hero() {
             }}
             className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full max-w-xs sm:max-w-md mx-auto"
           >
-            <Button variant="primary" size="lg" className="w-full sm:w-auto">
-              <Heart className="h-4 w-4 mr-2" />
-              Faire un don
-            </Button>
+            <a href="https://www.helloasso.com/associations/association-floka/formulaires/1" target="_blank" rel="noopener noreferrer">
+              <Button variant="primary" size="lg" className="w-full sm:w-auto">
+                <Heart className="h-4 w-4 mr-2" />
+                Faire un don
+              </Button>
+            </a>
             <Button
               variant="outline"
               size="lg"

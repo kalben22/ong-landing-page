@@ -39,7 +39,7 @@ function ActionCardComponent({
       <div className="relative z-10 flex flex-col h-full">
         <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-peacock">{icon}</div>
         <h3 className="mb-2 text-xl font-bold text-peacock">{title}</h3>
-        <p className="text-peacock/80 flex-grow">{description}</p>
+        <p className="text-peacock/80 flex-grow line-clamp-6">{description}</p>
 
         {actionDetails && (
           <button
@@ -66,7 +66,7 @@ function ActionCardComponent({
         <div className="relative z-10 flex flex-col h-full">
           <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-peacock">{icon}</div>
           <h3 className="mb-2 text-xl font-bold text-peacock">{title}</h3>
-          <p className="text-peacock/80 flex-grow">{description}</p>
+          <p className="text-peacock/80 flex-grow line-clamp-6">{description}</p>
 
           {actionDetails && (
             <button

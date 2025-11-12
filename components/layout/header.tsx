@@ -39,7 +39,7 @@ export default function Header() {
             transition={{ duration: 0.5 }}
           >
             <Image
-              src="/images/logo.svg"
+              src="/images/logo.jpg"
               alt="Logo de l'Association"
               width={40}
               height={40}
@@ -93,15 +93,12 @@ export default function Header() {
         </button>
 
         {/* CTA Button */}
-        <Button
-          variant="primary"
-          size="sm"
-          className="hidden md:inline-flex"
-          onClick={() => window.open("#donation", "_blank")}
-        >
-          <Heart className="h-4 w-4 mr-2" />
-          Faire un don
-        </Button>
+        <a href="https://www.helloasso.com/associations/association-floka/formulaires/1" target="_blank" rel="noopener noreferrer">
+              <Button variant="primary" size="lg" className="w-full sm:w-auto">
+                <Heart className="h-4 w-4 mr-2" />
+                Faire un don
+              </Button>
+            </a>
       </div>
 
       {/* Mobile Menu */}
@@ -126,15 +123,12 @@ export default function Header() {
                 {item.label}
               </button>
             ))}
-            <Button
-              variant="primary"
-              size="sm"
-              className="mt-4 w-full sm:w-auto"
-              onClick={() => window.open("#donation", "_blank")}
-            >
-              <Heart className="h-4 w-4 mr-2" />
-              Faire un don
-            </Button>
+            <a href="https://www.helloasso.com/associations/association-floka/formulaires/1" target="_blank" rel="noopener noreferrer">
+              <Button variant="primary" size="lg" className="w-full sm:w-auto">
+                <Heart className="h-4 w-4 mr-2" />
+                Faire un don
+              </Button>
+            </a>
           </nav>
         </motion.div>
       )}

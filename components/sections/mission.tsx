@@ -35,12 +35,6 @@ function MissionComponent() {
               <ValueCard key={value.id} title={value.title} description={value.description} icon={value.icon} />
             ))}
           </div>
-
-          <p className="mx-auto max-w-[800px] text-moonlight/90 md:text-lg mt-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies
-            lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl. Sed euismod, nisl vel ultricies
-            lacinia, nisl nisl aliquam nisl.
-          </p>
         </motion.div>
       </SectionContainer>
     </section>
