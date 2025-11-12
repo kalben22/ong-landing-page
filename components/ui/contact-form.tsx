@@ -21,35 +21,56 @@ export function ContactForm() {
 
   const { formData, errors, isSubmitting, handleChange, handleSubmit } = useFormValidation(initialFormState)
 
-  // Initialiser EmailJS au montage du composant
+  // Initialiser EmailJS au montage du composant (CLIENT ONLY)
   useEffect(() => {
-    emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "")
+    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+    if (!publicKey) {
+      console.error("EmailJS public key missing (NEXT_PUBLIC_EMAILJS_PUBLIC_KEY).")
+      return
+    }
+    try {
+      emailjs.init(publicKey)
+      console.debug("EmailJS initialized")
+    } catch (err) {
+      console.error("EmailJS init error:", err)
+    }
   }, [])
 
   const onSubmit = async (data: FormData) => {
     try {
       setFormError("")
-      
-      // Envoyer l'email avec EmailJS
-      await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "",
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "",
-        {
-          firstName: data.firstName,
-          lastName: data.lastName,
-          email: data.email,
-          message: data.message,
-        }
-      )
+
+      const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || ""
+      const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || ""
+
+      if (!serviceId || !templateId) {
+        setFormError("Configuration EmailJS incomplète. Contactez l'administrateur.")
+        console.error("Missing EmailJS service_id or template_id")
+        return
+      }
+
+      // Mappe les champs à ce que ton template EmailJS attend.
+      // --> Si ton template attend {{firstName}}/{{lastName}} remplace les clefs par celles-ci.
+      const templateParams = {
+        prenom: data.firstName, // change key si ton template attend firstName
+        nom: data.lastName,     // change key si ton template attend lastName
+        email: data.email,
+        message: data.message,
+      }
+
+      // Envoi
+      await emailjs.send(serviceId, templateId, templateParams)
 
       setFormSubmitted(true)
       console.log("Email envoyé avec succès")
 
       // Réinitialiser le statut après 5 secondes
       setTimeout(() => setFormSubmitted(false), 5000)
-    } catch (error) {
+    } catch (error: any) {
       console.error("Erreur lors de l'envoi:", error)
-      setFormError("Erreur lors de l'envoi du message. Veuillez réessayer.")
+      // si error.text ou error.status existe, on peut afficher plus d'infos utiles
+      const friendly = error?.text || error?.message || "Erreur lors de l'envoi du message. Veuillez réessayer."
+      setFormError(friendly)
     }
   }
 
