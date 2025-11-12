@@ -137,7 +137,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     id: 1,
     name: "Elvire WADOTCHEDOHOUN",
     role: "Fondatrice & Présidente",
-    image: "/images/team/users.jpg",
+    image: "/images/team/users1.jpg",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia.",},
   {
     id: 2,
@@ -150,7 +150,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     id: 3,
     name: "Ismene CLEDJO",
     role: "Fondateur & Treso",
-    image: "/images/team/member2.jpg",
+    image: "/images/team/users.jpg",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia.",
   },
   {
