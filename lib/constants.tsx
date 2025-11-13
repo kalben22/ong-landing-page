@@ -568,9 +568,9 @@ export const CONTACT_INFO: ContactInfo = {
   email: "bureau@fondationfloka.org",
   address: "Maison Copao, ancienne route inter-Etats, Zomai-Kpota, Ouidah, Bénin",
   socialLinks: [
-    { platform: "instagram", url: "https://instagram.com/ong" },
-    { platform: "facebook", url: "https://facebook.com/ong" },
-    { platform: "linkedin", url: "https://linkedin.com/company/ong" },
+    { platform: "instagram", url: "https://www.instagram.com/fondationfloka?igsh=NDNmbXg0Z25qcG52"},
+    { platform: "facebook", url: "https://www.facebook.com/profile.php?id=100091882151621" },
+    { platform: "linkedin", url: "https://www.linkedin.com/in/fondation-floka-4178b9357?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" },
   ],
 }
 
