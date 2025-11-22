@@ -254,10 +254,8 @@ export const ACTIONS_DETAILS: ActionDetail[] = [
     coverImage: "/images/Actions/informatique/image0.jpeg",
     gallery: [
       { url: "/images/Actions/informatique/image1.jpeg", alt: "Cours d'informatique" },
-      { url: "/images/Actions/informatique/image5.png", alt: "Apprentissage" },
       { url: "/images/Actions/informatique/image4.png", alt: "Classe" },
       { url: "/images/Actions/informatique/image2.jpeg", alt: "Utilisation ordinateur" },  
-      { url: "/images/Actions/informatique/image1.jpeg", alt: "Cours d'informatique" },
       { url: "/images/Actions/informatique/image5.png", alt: "Apprentissage" },
       ],
   },
@@ -276,7 +274,6 @@ export const ACTIONS_DETAILS: ActionDetail[] = [
     gallery: [
       { url: "/images/Actions/soutien_scolaire/Image22.png", alt: "Campagne de reboisement"},
       {url: "/images/Actions/soutien_scolaire/Image23.png", alt: "Nettoyage de plage"},
-      { url: "/images/Actions/soutien_scolaire/Image22.png", alt: "Atelier de sensibilisation"},
     ],
   },
 ]
