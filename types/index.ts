@@ -15,11 +15,12 @@ export interface TeamMember {
 }
 
 export interface HistoireSection {
-  id: number
+ id: number
   title: string
   content: string[]
   image: string
   imageAlt: string
+  images?: string[] // Ajoute cette ligne
 }
 
 export interface Value {

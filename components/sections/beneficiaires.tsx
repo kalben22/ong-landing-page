@@ -127,12 +127,12 @@ function BeneficiairesComponent() {
                 >
                   <div className="rounded-lg overflow-hidden shadow-md bg-white h-full flex flex-col">
                     {/* Image en haut */}
-                    <div className="relative h-[180px] w-full bg-peacock/20">
+                    <div className="relative h-[280px] w-full bg-peacock/20">
                       <Image
                         src={beneficiaire.image || "/placeholder.svg"}
                         alt={beneficiaire.name}
                         fill
-                        className="object-cover"
+                        className="object-cover object-center"
                         sizes="280px"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>

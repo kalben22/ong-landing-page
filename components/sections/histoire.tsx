@@ -38,6 +38,7 @@ export default function Histoire() {
               content={section.content}
               image={section.image}
               imageAlt={section.imageAlt}
+               images={section.images} 
               reverse={index % 2 !== 0}
               // Aucune modification ici, tout se passe dans HistoireSection
             />
