@@ -64,17 +64,9 @@ export const BENEFICIAIRES: Beneficiaire[] = [
     id: 5,
     name: "Aïcha Diop",
     role: "Artisane",
-    image: "/images/beneficiaires/Image6.jpg",
+    image: "/images/beneficiaires/Image5.png",
     testimonial:
       "La coopérative féminine a changé ma vie et celle de nombreuses femmes de mon village. Nous sommes maintenant indépendantes financièrement.",
-  },
-  {
-    id: 6,
-    name: "Thomas Ndiaye",
-    role: "Étudiant boursier",
-    image: "/images/beneficiaires/Image1.png",
-    testimonial:
-      "La bourse d'études m'a permis de poursuivre mon rêve de devenir médecin. Je reviendrai exercer dans ma communauté pour aider ceux qui en ont besoin.",
   },
 ]
 
