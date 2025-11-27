@@ -9,6 +9,7 @@ import Equipe from "@/components/sections/equipe"
 import Contact from "@/components/sections/contact"
 import Header from "@/components/layout/header"
 import Footer from "@/components/layout/footer"
+import PartnersSection from "@/components/sections/sponsors"
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Histoire />
         <Equipe />
         <Contact />
+        <PartnersSection />
       </main>
       <Footer />
     </div>

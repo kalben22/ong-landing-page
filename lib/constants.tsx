@@ -299,3 +299,11 @@ export const NAV_ITEMS = [
   { id: "equipe", label: "Notre Équipe" },
   { id: "contact", label: "Nous Rejoindre" },
 ]
+
+//Sponsors and Partners
+export const SPONSORS = [
+  { id: "s1", name: "AFRIKEDUTECH", logo: "/images/sponsors/afrikedutech.png", url: "https://www.cquoi7boite.com/afrikedutech/" },
+  { id: "s2", name: "AFRIKEDUTECH", logo: "/images/sponsors/afrikedutech.png", url: "https://www.cquoi7boite.com/afrikedutech/" },
+  { id: "s3", name: "AFRIKEDUTECH", logo: "/images/sponsors/afrikedutech.png", url: "https://www.cquoi7boite.com/afrikedutech/" },
+]
+

@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button"
 import { useScrollSpy } from "@/hooks/use-scroll-spy"
 import { NAV_ITEMS } from "@/lib/constants"
 
+// ...existing code...
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const activeSection = useScrollSpy(["hero", ...NAV_ITEMS.map((item) => item.id)], 100)
@@ -27,10 +28,11 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-laurel/20 bg-moonlight/90 backdrop-blur-sm">
-      <div className="container flex h-16 md:h-20 items-center justify-between px-4 md:px-6">
+      <div className="container relative flex h-16 md:h-20 items-center justify-between px-4 md:px-6">
+        {/* Brand: centered on mobile, normal flow on md+ */}
         <button
           onClick={() => scrollToSection("hero")}
-          className="flex items-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-mustard rounded-md"
+          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-mustard rounded-md z-10 md:static md:translate-x-0 md:translate-y-0"
           aria-label="Retour à l'accueil"
         >
           <motion.div
@@ -81,24 +83,32 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* Mobile Menu Button */}
-        <button
-          onClick={toggleMenu}
-          className="md:hidden text-peacock hover:text-mustard transition-colors"
-          aria-expanded={isMenuOpen}
-          aria-controls="mobile-menu"
-          aria-label={isMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
-        >
-          {isMenuOpen ? <X className="h-5 w-5 md:h-6 md:w-6" /> : <Menu className="h-5 w-5 md:h-6 md:w-6" />}
-        </button>
+        {/* Right actions (menu + CTA) */}
+        <div className="ml-auto flex items-center gap-3 z-20">
+          {/* Mobile Menu Button */}
+          <button
+            onClick={toggleMenu}
+            className="md:hidden text-peacock hover:text-mustard transition-colors"
+            aria-expanded={isMenuOpen}
+            aria-controls="mobile-menu"
+            aria-label={isMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
+          >
+            {isMenuOpen ? <X className="h-5 w-5 md:h-6 md:w-6" /> : <Menu className="h-5 w-5 md:h-6 md:w-6" />}
+          </button>
 
-        {/* CTA Button */}
-        <a href="https://www.helloasso.com/associations/association-floka/formulaires/1" target="_blank" rel="noopener noreferrer">
-              <Button variant="primary" size="lg" className="w-full sm:w-auto">
-                <Heart className="h-4 w-4 mr-2" />
-                Faire un don
-              </Button>
-            </a>
+          {/* CTA Button: hidden on very small screens to avoid overlap (appears from sm/md) */}
+          <a
+            href="https://www.helloasso.com/associations/association-floka/formulaires/1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden sm:inline-flex"
+          >
+            <Button variant="primary" size="lg" className="w-full sm:w-auto">
+              <Heart className="h-4 w-4 mr-2" />
+              Faire un don
+            </Button>
+          </a>
+        </div>
       </div>
 
       {/* Mobile Menu */}
@@ -135,3 +145,4 @@ export default function Header() {
     </header>
   )
 }
+// ...existing code...
