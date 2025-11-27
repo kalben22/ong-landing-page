@@ -32,10 +32,10 @@ export default function Header() {
         {/* Brand: centered on mobile, normal flow on md+ */}
         <button
           onClick={() => scrollToSection("hero")}
-          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-mustard rounded-md z-10 md:static md:translate-x-0 md:translate-y-0"
+          className="flex items-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-mustard rounded-md z-10 md:static md:visible visible"
           aria-label="Retour à l'accueil"
         >
-        <motion.div
+          <motion.div
             initial={{ rotate: -10, scale: 0.9 }}
             animate={{ rotate: 0, scale: 1 }}
             transition={{ duration: 0.5 }}
@@ -55,12 +55,12 @@ export default function Header() {
             transition={{ delay: 0.2, duration: 0.5 }}
             className="text-sm md:text-base font-bold text-peacock"
           >
-            {/* Name Association */}
+            Association FLOKA
           </motion.span>
         </button>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex gap-6" aria-label="Navigation principale">
+        <nav className="hidden md:flex gap-6 ml-auto md:ml-0" aria-label="Navigation principale">
           {NAV_ITEMS.map((item) => (
             <button
               key={item.id}
