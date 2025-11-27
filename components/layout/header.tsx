@@ -35,7 +35,7 @@ export default function Header() {
           className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-mustard rounded-md z-10 md:static md:translate-x-0 md:translate-y-0"
           aria-label="Retour à l'accueil"
         >
-          <motion.div
+        <motion.div
             initial={{ rotate: -10, scale: 0.9 }}
             animate={{ rotate: 0, scale: 1 }}
             transition={{ duration: 0.5 }}
@@ -45,7 +45,7 @@ export default function Header() {
               alt="Logo de l'Association"
               width={40}
               height={40}
-              className="h-8 w-8 md:h-10 md:w-10 rounded-full bg-mustard"
+              className="h-6 w-6 md:h-8 md:w-8 rounded-full bg-mustard"
               priority
             />
           </motion.div>
@@ -53,9 +53,9 @@ export default function Header() {
             initial={{ opacity: 0, x: -10 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2, duration: 0.5 }}
-            className="text-lg md:text-xl font-bold text-peacock"
+            className="text-sm md:text-base font-bold text-peacock"
           >
-            Association FLOKA
+            {/* Name Association */}
           </motion.span>
         </button>
 

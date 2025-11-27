@@ -235,7 +235,7 @@ export const ACTIONS_DETAILS: ActionDetail[] = [
     coverImage: "/images/Actions/alphabetisation/Image18.jpeg",
     gallery: [
       { url: "/images/Actions/alphabetisation/Image16.jpeg", alt: "Etude des écritures" },
-      { url: "/images/Actions/alphabetisation/Image17.jpeg", alt: "Etude des écritures" },
+      { url: "/images/Actions/alphabetisation/image17.jpeg", alt: "Etude des écritures" },
       { url: "/images/Actions/alphabetisation/Image17.png", alt: "Etude des écritures" },
       { url: "/images/Actions/alphabetisation/Image18.jpeg", alt: "Etude des écritures" },
       { url: "/images/Actions/alphabetisation/Image19.jpeg", alt: "Etude des écritures" },
