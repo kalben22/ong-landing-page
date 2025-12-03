@@ -122,7 +122,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     id: 2,
-    name: "Leatitia OWENDET",
+    name: "Laetitia OWENDET",
     role: "Co-Fondatrice & SG",
     image: "/images/team/Leatitia.jpg",
   },
@@ -136,19 +136,19 @@ export const TEAM_MEMBERS: TeamMember[] = [
     id: 4,
     name: "Gloria KADJA",
     role: "SGA",
-    image: "/images/team/member2.jpg",
+    image: "/images/team/avatar_femme.png",
   },
   {
     id: 5,
     name: "Bricette LIEVIN",
     role: "Chargée des réseaux sociaux",
-    image: "/images/team/member1.jpg",
+    image: "/images/team/avatar_femme.png",
   },
   {
     id: 6,
     name: "Sabin KADJA",
     role: "Coordinateur local",
-    image: "/images/team/member3.jpg",
+    image: "/images/team/avatar_homme.png",
   },
 ]
 
