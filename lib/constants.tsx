@@ -30,27 +30,27 @@ export const HERO_SLIDES: HeroSlide[] = [
 export const BENEFICIAIRES: Beneficiaire[] = [
   {
     id: 1,
-    name: "Marie Dupont",
-    role: "Bénéficiaire du programme d'éducation",
+    name: "FATCHEHOUN Alice",
+    role: "Vendeuse de riz",
     image: "/images/beneficiaires/Image1.png",
     testimonial:
-      "Grâce à l'ONG, j'ai pu terminer mes études et trouver un emploi stable. Ici il s'agit d'un texte.",
+      "Avant c’était difficile de lire et d’écrire même mon prénom maintenant, j’arrive à écrire tout mon nom/prénom et je les lis ensuite. J’écris aussi moi même les numéros de téléphone mais j’ai encore des difficultés à bien parler le français.",
   },
   {
     id: 2,
-    name: "Jean Mbeki",
-    role: "Agriculteur local",
+    name: "ZANTCHIO Beatrice",
+    role: "Vendeuse de bouillie et de gâteaux",
     image: "/images/beneficiaires/Image2.png",
     testimonial:
-      "Les formations agricoles m'ont permis de doubler ma production et de mieux nourrir ma famille. lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "Depuis que j’ai commencé, je parle mieux français maintenant. J’écris et je lis et je comprends mieux..",
   },
   {
     id: 3,
-    name: "Fatou Sow",
-    role: "Mère de famille",
+    name: "HOSSOU Colette",
+    role: "Couturière",
     image: "/images/beneficiaires/Image3.png",
     testimonial:
-      "Le centre de santé dans notre village a sauvé la vie de mon enfant. Avant, nous devions marcher 15 km pour consulter un médecin.",
+      "Depuis que j’ai commencé, je parle et comprend mieux le français maintenant. J’écris et je lis, ce qui a changé ma vie de famille et mon travail.",
   },
   {
     id: 4,
