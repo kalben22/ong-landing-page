@@ -48,7 +48,7 @@
     "framer-motion": "latest",
     "input-otp": "1.4.1",
     "lucide-react": "^0.454.0",
-    "next": "15.5.6",
+    "next": "15.5.7",
     "next-themes": "^0.4.4",
     "react": "^19",
     "react-day-picker": "8.10.1",
@@ -66,15 +66,16 @@
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "eslint": "^9",
+    "eslint": "^9.39.1",
     "eslint-config-next": "16.0.1",
     "postcss": "^8",
-    "tailwindcss": "^3.4.17",
+    "tailwindcss": "^4.1.17",
     "typescript": "^5"
   },
   "overrides": {
     "minimatch>brace-expansion": "1.1.12",
     "minimatch>brace-expansion@2": "2.0.2",
-    "eslint>@eslint/plugin-kit": "0.3.4"
+    "eslint>@eslint/plugin-kit": "0.3.4",
+    "js-yaml": "4.1.1"
   }
 }
