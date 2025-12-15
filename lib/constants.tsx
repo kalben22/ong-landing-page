@@ -31,7 +31,7 @@ export const BENEFICIAIRES: Beneficiaire[] = [
   {
     id: 1,
     name: "FATCHEHOUN Alice",
-    role: "Vendeuse de riz",
+    role: "Commerçante",
     image: "/images/beneficiaires/Image1.png",
     testimonial:
       "Avant c’était difficile de lire et d’écrire même mon prénom maintenant, j’arrive à écrire tout mon nom/prénom et je les lis ensuite. J’écris aussi moi même les numéros de téléphone mais j’ai encore des difficultés à bien parler le français.",
@@ -39,7 +39,7 @@ export const BENEFICIAIRES: Beneficiaire[] = [
   {
     id: 2,
     name: "ZANTCHIO Beatrice",
-    role: "Vendeuse de bouillie et de gâteaux",
+    role: "Commerçante",
     image: "/images/beneficiaires/Image2.png",
     testimonial:
       "Depuis que j’ai commencé, je parle mieux français maintenant. J’écris et je lis et je comprends mieux..",
@@ -58,7 +58,7 @@ export const BENEFICIAIRES: Beneficiaire[] = [
     role: "Elève",
     image: "/images/beneficiaires/Image4.png",
     testimonial:
-      "“Ces cours m'ont bcp apporté. J'ai  appris comment utiliser l'ordinateur, différencier le clavier anglais du français, les differentes parties de l'ordinateur. J'ai appris Excel et word.",
+      "“Ces cours m'ont beaucoup apporté. J'ai  appris comment utiliser l'ordinateur, différencier le clavier anglais du français, les differentes parties de l'ordinateur. J'ai appris Excel et word.",
   },
   {
     id: 5,
