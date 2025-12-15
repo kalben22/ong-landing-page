@@ -54,19 +54,19 @@ export const BENEFICIAIRES: Beneficiaire[] = [
   },
   {
     id: 4,
-    name: "Ibrahim Koné",
-    role: "Entrepreneur local",
+    name: "Prielle, 15 ans en  5ème ",
+    role: "Elève",
     image: "/images/beneficiaires/Image4.png",
     testimonial:
-      "Le microcrédit m'a permis de lancer mon entreprise et d'employer cinq personnes de ma communauté. Nous fabriquons maintenant des produits vendus dans tout le pays.",
+      "“Ces cours m'ont bcp apporté. J'ai  appris comment utiliser l'ordinateur, différencier le clavier anglais du français, les differentes parties de l'ordinateur. J'ai appris Excel et word.",
   },
   {
     id: 5,
-    name: "Aïcha Diop",
-    role: "Artisane",
+    name: " Haniel, 14ans en 4ème",
+    role: "Elève",
     image: "/images/beneficiaires/Image5.png",
     testimonial:
-      "La coopérative féminine a changé ma vie et celle de nombreuses femmes de mon village. Nous sommes maintenant indépendantes financièrement.",
+      "Je remercie le groupe floka pour cette formation qui pourra m'aider dans le cadre de la comptabilité ou en entreprise.",
   },
 ]
 
