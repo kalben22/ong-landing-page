@@ -59,8 +59,8 @@ export default function Header() {
           </motion.span>
         </button>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex gap-6 ml-auto md:ml-0" aria-label="Navigation principale">
+        {/* Desktop / Tablet Navigation */}
+        <nav className="hidden sm:flex gap-6 sm:ml-4 md:ml-6 lg:ml-8" aria-label="Navigation principale">
           {NAV_ITEMS.map((item) => (
             <button
               key={item.id}
