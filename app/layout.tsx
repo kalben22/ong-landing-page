@@ -30,7 +30,11 @@ export default function RootLayout({
       <head>
         <meta name="theme-color" content="#3A7D89" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        {/* SVG favicon for modern browsers */}
+        <link rel="icon" href="/images/logo.jpg" type="image/svg+xml" />
+        {/* Fallbacks for older browsers / platforms */}
+        <link rel="shortcut icon" href="/images/logo.jpg" />
+        <link rel="apple-touch-icon" href="/images/logo.jpg " />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
